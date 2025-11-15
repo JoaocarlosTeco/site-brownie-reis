@@ -21,6 +21,7 @@ Este é um site responsivo desenvolvido com HTML, CSS e JavaScript puro, apresen
 SiteBrownie1.2/
 ├── .gitignore            # Arquivos ignorados pelo Git
 ├── README.md             # Documentação do projeto
+├── index.html            # Página inicial (para GitHub Pages)
 ├── imagens/              # Imagens dos produtos e logo
 │   ├── logo2.jpg
 │   ├── tradicional.jpeg
@@ -45,9 +46,24 @@ SiteBrownie1.2/
 
 ## 🚀 Como Usar
 
+### Localmente
 1. Clone ou baixe este repositório
-2. Abra o arquivo `paginaPrincipal/Inicio.html` no seu navegador
+2. Abra o arquivo `index.html` no seu navegador
 3. Navegue pelo site usando o menu de navegação
+
+### Online (GitHub Pages)
+O site está disponível online através do GitHub Pages! 
+
+**Para ativar o GitHub Pages:**
+1. Acesse o repositório no GitHub: `https://github.com/JoaocarlosTeco/site-brownie-reis`
+2. Vá em **Settings** (Configurações)
+3. No menu lateral, clique em **Pages**
+4. Em **Source**, selecione a branch **main** e a pasta **/ (root)**
+5. Clique em **Save**
+6. Aguarde alguns minutos e seu site estará disponível em:
+   `https://JoaocarlosTeco.github.io/site-brownie-reis/`
+
+**Nota:** O GitHub Pages pode levar alguns minutos para publicar o site pela primeira vez.
 
 ## 📱 Responsividade
 
