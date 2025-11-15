@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produtos - Brownie Reis</title>
+    <link rel="stylesheet" href="vendas.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <img src="../imagens/logo2.jpg" alt="Logo Brownie Reis" class="logo" />
+        <p class="tagline">
+          Brownies artesanais direto do forno para sua casa!
+        </p>
+      </div>
+    </header>
+
+    <nav id="navbar">
+      <div class="nav-container">
+        <a href="../paginaPrincipal/Inicio.html" class="nav-link">Início</a>
+        <a href="Vendas.html" class="nav-link active">Produtos</a>
+        <a href="#contato" class="nav-link">Contato</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <section class="products-hero">
+      <div class="products-hero-content">
+        <h1 class="products-hero-title">Nossos Brownies</h1>
+        <p class="products-hero-subtitle">
+          Escolha entre nossos deliciosos brownies artesanais, feitos com
+          ingredientes selecionados e muito carinho
+        </p>
+        <div class="products-stats">
+          <div class="stat-item">
+            <span class="stat-number">8+</span>
+            <span class="stat-label">Sabores</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Artesanal</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">⭐</span>
+            <span class="stat-label">Qualidade</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="vendas">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Escolha seu Brownie</h2>
+          <p class="section-description">
+            Filtre por categoria e encontre o sabor perfeito para você
+          </p>
+        </div>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">
+            <span>🍫</span> Todos
+          </button>
+          <button class="filter-btn" data-filter="tradicional">
+            <span>✨</span> Tradicionais
+          </button>
+          <button class="filter-btn" data-filter="especial">
+            <span>🌱</span> Especiais
+          </button>
+        </div>
+
+        <div class="vitrine" id="vitrine">
+          <div class="item" data-category="tradicional">
+            <div class="item-image-wrapper">
+              <img
+                src="../imagens/tradicional.jpeg"
+                alt="Brownie tradicional"
+              />
+              <div class="item-badge">Mais Vendido</div>
+            </div>
+            <div class="item-content">
+              <h3>Brownie Tradicional</h3>
+              <p class="item-ingredients">
+                <b>Ingredientes:</b> ovos, açúcar, chocolate, manteiga e farinha
+                de trigo.
+              </p>
+              <div class="item-footer">
+                <span class="item-price">R$ 11,90</span>
+                <button
+                  class="btn-whatsapp"
+                  onclick="comprarWhatsApp('Brownie Tradicional', '11.90')"
+                >
+                  <span>💬</span> Comprar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" data-category="tradicional">
+            <div class="item-image-wrapper">
+              <img
+                src="../imagens/brigadero.jpeg"
+                alt="Brownie de brigadeiro"
+              />
+            </div>
+            <div class="item-content">
+              <h3>Brownie de Brigadeiro</h3>
+              <p class="item-ingredients">
+                <b>Ingredientes:</b> ovos, açúcar, chocolate, manteiga, farinha
+                de trigo, leite condensado e chocolate.
+              </p>
+              <div class="item-footer">
+                <span class="item-price">R$ 13,90</span>
+                <button
+                  class="btn-whatsapp"
+                  onclick="comprarWhatsApp('Brownie de Brigadeiro', '13.90')"
+                >
+                  <span>💬</span> Comprar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" data-category="tradicional">
+            <div class="item-image-wrapper">
+              <img src="../imagens/beijinho.jpeg" alt="Brownie de ninho" />
+            </div>
+            <div class="item-content">
+              <h3>Brownie de Ninho</h3>
+              <p class="item-ingredients">
+                <b>Ingredientes:</b> ovos, açúcar, chocolate, manteiga, farinha
+                de trigo, leite condensado e leite ninho.
+              </p>
+              <div class="item-footer">
+                <span class="item-price">R$ 13,90</span>
+                <button
+                  class="btn-whatsapp"
+                  onclick="comprarWhatsApp('Brownie de Ninho', '13.90')"
+                >
+                  <span>💬</span> Comprar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" data-category="tradicional">
+            <div class="item-image-wrapper">
+              <img
+                src="../imagens/RecheioDoceLeite.jpeg"
+                alt="Brownie de doce de leite"
+              />
+            </div>
+            <div class="item-content">
+              <h3>Brownie de Doce de Leite</h3>
+              <p class="item-ingredients">
+                <b>Ingredientes:</b> ovos, açúcar, chocolate, manteiga, farinha
+                de trigo, leite e açúcar.
+              </p>
+              <div class="item-footer">
+                <span class="item-price">R$ 13,90</span>
+                <button
+                  class="btn-whatsapp"
+                  onclick="comprarWhatsApp('Brownie de Doce de Leite', '13.90')"
+                >
+                  <span>💬</span> Comprar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-header">
+          <h2 class="section-title">Opções Especiais</h2>
+          <p class="section-description">
+            Para quem busca opções sem glúten ou sem açúcar, sem abrir mão do
+            sabor
+          </p>
+        </div>
+
+        <div class="vitrine2" id="vitrine2">
+          <div class="item" data-category="especial">
+            <div class="item-image-wrapper">
+              <img src="../imagens/semAcuca.jpeg" alt="Brownie sem açúcar" />
+              <div class="item-badge special">Sem Açúcar</div>
+            </div>
+            <div class="item-content">
+              <h3>Brownie sem Açúcar</h3>
+              <p class="item-ingredients">
+                <b>Ingredientes:</b> ovos, sucralose, chocolate, manteiga e
+                farinha de trigo.
+              </p>
+              <div class="item-footer">
+                <span class="item-price">R$ 12,00</span>
+                <button
+                  class="btn-whatsapp"
+                  onclick="comprarWhatsApp('Brownie sem Açúcar', '12.00')"
+                >
+                  <span>💬</span> Comprar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" data-category="especial">
+            <div class="item-image-wrapper">
+              <img src="../imagens/semGlutem.jpeg" alt="Brownie sem glúten" />
+              <div class="item-badge special">Sem Glúten</div>
+            </div>
+            <div class="item-content">
+              <h3>Brownie sem Glúten</h3>
+              <p class="item-ingredients">
+                <b>Ingredientes:</b> ovos, açúcar, chocolate, manteiga e farinha
+                de arroz.
+              </p>
+              <div class="item-footer">
+                <span class="item-price">R$ 12,00</span>
+                <button
+                  class="btn-whatsapp"
+                  onclick="comprarWhatsApp('Brownie sem Glúten', '12.00')"
+                >
+                  <span>💬</span> Comprar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" data-category="especial">
+            <div class="item-image-wrapper">
+              <img
+                src="../imagens/semGlutemBejinho.jpeg"
+                alt="Brownie sem glúten de ninho"
+              />
+              <div class="item-badge special">Sem Glúten</div>
+            </div>
+            <div class="item-content">
+              <h3>Brownie sem Glúten de Ninho</h3>
+              <p class="item-ingredients">
+                <b>Ingredientes:</b> ovos, açúcar, chocolate, manteiga, farinha
+                de arroz, leite condensado e leite ninho.
+              </p>
+              <div class="item-footer">
+                <span class="item-price">R$ 14,90</span>
+                <button
+                  class="btn-whatsapp"
+                  onclick="comprarWhatsApp('Brownie sem Glúten de Ninho', '14.90')"
+                >
+                  <span>💬</span> Comprar
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="item" data-category="especial">
+            <div class="item-image-wrapper">
+              <img
+                src="../imagens/semGlutemBrigadero.jpeg"
+                alt="Brownie sem glúten de brigadeiro"
+              />
+              <div class="item-badge special">Sem Glúten</div>
+            </div>
+            <div class="item-content">
+              <h3>Brownie sem Glúten de Brigadeiro</h3>
+              <p class="item-ingredients">
+                <b>Ingredientes:</b> ovos, açúcar, chocolate, manteiga, farinha
+                de arroz, leite condensado e chocolate.
+              </p>
+              <div class="item-footer">
+                <span class="item-price">R$ 14,90</span>
+                <button
+                  class="btn-whatsapp"
+                  onclick="comprarWhatsApp('Brownie sem Glúten de Brigadeiro', '14.90')"
+                >
+                  <span>💬</span> Comprar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contato">
+      <div class="footer-container">
+        <div class="footer-content">
+          <h3>Entre em Contato</h3>
+          <p>
+            WhatsApp:
+            <a href="https://wa.me/5521999999999" class="whatsapp-link"
+              >(21) 99999-9999</a
+            >
+          </p>
+          <p class="footer-text">
+            &copy; 2025 Brownie Reis. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="vendas.js"></script>
+  </body>
+</html>
